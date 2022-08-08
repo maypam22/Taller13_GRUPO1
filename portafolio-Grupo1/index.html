@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+	<!-- https://cdnjs.com/libraries/font-awesome -->
+
+	<!-- https://fontawesome.com/icons -->
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+	integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+	crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<link rel="stylesheet" href="./styles.css" />
+
+	<!-- https://www.flaticon.es/ -->
+	<link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/1356/1356479.png" type="image/x-icon">
+	<script defer src = "ejemplo.js" ></script>
+	<title>Portfolio-Flexbox</title>
+
+</head>
+
+<body>
+
+	<!-- HEADER SECTION SATRTS -->
+	<header class="header">
+
+		<nav class="navbar">
+			<div class="container">
+				<div class="logo">Grupo-1</div>
+				<ul class="menu">
+					<li><a href="#navbar">Home</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#expert">Expert</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="showcase">
+			<div class="container-2">
+				<div class="showcase-box">
+					<h1>Welcome to my online portfolio</h1>
+					<a href="#portfolio" class="btn btn-light">Portfolio</a>
+				</div>
+			</div>
+		</div>
+
+	</header>
+	<!-- HEADER SECTION ENDS -->
+
+
+
+    <!-- MAIN SECTION STARTS  -->
+	<main class="main">
+
+
+
+		<!-- ABOUT SECTION STARTS  -->
+		<section class="about container" id="about">
+			<div class="about__texts">
+				<h2 class="title">¿Quién soy?</h2>
+				<p class="about__paragraph">Somos el Grupo-1 integrados por Omar Guachamin, Lesly Herrera, Mayra Ñaupari, Nicole Motoche, 
+					Jonathan Palacios. Todos los integrantes del Grupo tenemos habilidades diferentes pero al ser ser un grupo nos 
+					complementamos bien.</p>
+				<a href="#" class="btn btn-about">curriculum vitae</a>
+			</div>
+			<figure class="about__img">
+				<img src="./images/girl.svg" class="about__picture" alt="chica-code">
+			</figure>
+		</section>
+		<!-- ABOUT SECTION ENDS  -->
+
+
+
+		<!-- PORTFOLIO SECTION STARTS  -->
+		<section class="portfolio" id="portfolio">
+			<div class="portfolio__container container" id="portafolio1">
+				
+				<h2 class="title">Mis proyectos</h2>
+
+				<div class="portfolio__cards">
+					<article class="portfolio__card">
+						<img src="./images/portfolio-1.jpg" class="portfolio__picture" alt="project-one">
+						<div class="portfolio__texts">
+							<h3 class="portfolio__title">Proyecto - 1</h3>
+							<p class="portfolio__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Minus tempore voluptatem quis in eaque obcaecati optio impedit numquam ex quos.</p>
+							<a href="#" class="btn btn-portfolio">Más información</a>
+						</div>
+					</article>
+
+					<article class="portfolio__card">
+						<img src="./images/portfolio-2.jpg" class="portfolio__picture" alt="project-two">
+						<div class="portfolio__texts">
+							<h3 class="portfolio__title">Proyecto - 2</h3>
+							<p class="portfolio__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Minus tempore voluptatem quis in eaque obcaecati optio impedit numquam ex quos.</p>
+							<a href="#" class="btn btn-portfolio">Más información</a>
+						</div>
+					</article>
+
+					<article class="portfolio__card">
+						<img src="./images/portfolio-3.jpg" class="portfolio__picture" alt="project-three">
+						<div class="portfolio__texts">
+							<h3 class="portfolio__title">Proyecto - 3</h3>
+							<p class="portfolio__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Minus tempore voluptatem quis in eaque obcaecati optio impedit numquam ex quos.</p>
+							<a href="#" class="btn btn-portfolio">Más información</a>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+		<!-- PORTFOLIO SECTION ENDS  -->
+
+		
+		<!-- LANGUAGES SECTION STARTS  -->
+		<section class="languages" id="expert">
+			
+			<div class="container">
+				<h2 class="title">Experto</h2>
+				<div class="languages__container">
+					<img src="./images/html-5.svg" class="languages__picture" alt="skill-one">
+					<img src="./images/css-3.svg" class="languages__picture" alt="skill-two">
+					<img src="./images/javascript.svg" class="languages__picture" alt="skill-three">
+					<img src="./images/react.svg" class="languages__picture" alt="skill-four">
+				</div>
+			</div>
+
+		</section>
+		<!-- LANGUAGES SECTION ENDS  -->
+
+
+	</main>
+	<!-- MAIN SECTION ENDS  -->
+<!-- MAIN CONTACT ME STARS  -->
+<div class="contact_background">
+	
+	<div class="contact_form">
+		
+		<div class="formulario">      
+		  <h1>Formulario de contacto</h1>
+			
+	
+	
+			  <form action="submeter-formulario.php" method="post">       
+	
+				
+					<p>
+					  <label for="nombre" class="colocar_nombre">Nombre
+						<span class="obligatorio">*</span>
+					  </label>
+						<input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+					</p>
+				  
+					<p>
+					  <label for="email" class="colocar_email">Email
+						<span class="obligatorio">*</span>
+					  </label>
+						<input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+					</p>
+				
+					<p>
+					  <label for="telefone" class="colocar_telefono">Teléfono
+					  </label>
+						<input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+					</p>    
+				  
+					<p>
+					  <label for="website" class="colocar_website">Sitio web
+					  </label>
+						<input type="url" name="introducir_website" id="website" placeholder="Escribe la URL de tu web">
+					</p>    
+				  
+					<p>
+					  <label for="asunto" class="colocar_asunto">Asunto
+						<span class="obligatorio">*</span>
+					  </label>
+						<input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+					</p>    
+				  
+					<p>
+					  <label for="mensaje" class="colocar_mensaje">Mensaje
+						<span class="obligatorio">*</span>
+					  </label>                     
+										<textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+									</p>                    
+				  
+					<button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+	
+					<p class="aviso">
+					  <span class="obligatorio"> * </span>los campos son obligatorios.
+					</p>          
+				
+			  </form>
+		</div>  
+	  </div>
+
+	  </div>
+	  
+
+	<!-- MAIN CONTACT ME ENDS  -->
+
+	<!-- TESTIMONALS SECTION STARTS  -->
+	  <div class="testimonianls">
+		<div class="inner">
+			<h1>Testimonios</h1>
+			<div class="border"></div>
+
+			<div class="row">
+				<div class="col">
+					<div class="testimonial">
+						<img src="https://cdn.pixabay.com/photo/2016/11/21/12/42/beard-1845166_960_720.jpg" alt="">
+						<div class="name">Full Name</div>
+						<div class="stars">
+							<i class="far fa-star"></i>
+							<i class="far fa-star"></i>
+							<i class="far fa-star"></i>
+							<i class="far fa-star"></i>
+							<i class="far fa-star"></i>
+
+						</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt minima dolor earum dolorum soluta aliquid esse, eaque ratione blanditiis, consequuntur possimus eos est corporis culpa nemo aspernatur architecto delectus rerum.</p>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="testimonial">
+						<img src="https://cdn.pixabay.com/photo/2016/11/21/12/42/beard-1845166_960_720.jpg" alt="">
+						<div class="name">Full Name</div>
+						<div class="stars">
+							<i class="far fa-star"></i>
+							<i class="far fa-star"></i>
+							<i class="far fa-star"></i>
+							<i class="far fa-star"></i>
+							<i class="far fa-star"></i>
+
+						</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt minima dolor earum dolorum soluta aliquid esse, eaque ratione blanditiis, consequuntur possimus eos est corporis culpa nemo aspernatur architecto delectus rerum.</p>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="testimonial">
+						<img src="https://cdn.pixabay.com/photo/2016/11/21/12/42/beard-1845166_960_720.jpg" alt="">
+						<div class="name">Full Name</div>
+						<div class="stars">
+							<i class="far fa-star"></i>
+							<i class="far fa-star"></i>
+							<i class="far fa-star"></i>
+							<i class="far fa-star"></i>
+							<i class="far fa-star"></i>
+
+						</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt minima dolor earum dolorum soluta aliquid esse, eaque ratione blanditiis, consequuntur possimus eos est corporis culpa nemo aspernatur architecto delectus rerum.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	  </div>
+	
+	<!-- TESTIMONALS SECTION ENDS -->
+
+
+	<!-- FOOTER SECTION STARTS  -->
+	<footer class="footer" id="Redes">
+		
+		<div class="footer__container container">
+			
+			<div class="footer__texts">
+				<h2 class="title">Contáctame</h2>
+				<div class="footer__icons">
+					<a href="#" class="footer__icon fab fa-facebook-f"></a>
+					<a href="#" class="footer__icon fab fa-twitter"></a>
+					<a href="#" class="footer__icon fab fa-instagram"></a>
+				</div>
+				<nav class="footer__nav">
+					<a href="#" class="footer__link">Inicio</a>
+					<a href="#about" class="footer__link">Sobre mí</a>
+					<a href="#portfolio" class="footer__link">Proyectos</a>
+				</nav>
+				<p class="footer__copy">Derechos reservados &copy; ByronTosh</p>
+			</div>
+
+			<figure class="footer__img">
+				<img src="./images/mail.svg" class="footer__picture" alt="contactme">
+			</figure>
+		</div>
+	</footer>
+	<!-- FOOTER SECTION STARTS  -->
+
+</body>
+
+</html>
